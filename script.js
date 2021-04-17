@@ -14,6 +14,8 @@ for (i = 0; etape.length > i; i++) {
 }
 
 document.getElementById("refresh").onclick = function() {
-    etape.classList.replace("invisible", "visible")
+    for (i = 0; etape.length > i; i++) {
+       etape[i].classList.replace("invisible", "visible");
+    }
 }
 

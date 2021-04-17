@@ -36,7 +36,25 @@ body {
     color: turquoise;
 }
 
+
+/*-----------Bouton refresh-------------*/
+
+.refresh {
+    width: 150px;
+    height: 40px;
+    margin-left: 5%;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.refresh:hover {
+    color: turquoise;
+}
+
 /*-----Conteneur d'étapes-----*/
+
 .act {
     width: 100%;
 }
