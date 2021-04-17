@@ -70,19 +70,19 @@ body {
 
 .etape {
     display: flex;
-    flex-direction:row;
     align-items: center;
     font-size: 18px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     width: 60%;
-    padding: 8px;
+    min-height: 50px;
     background-color: black;
-    height: 50px;
     border: solid 0.1px grey;
+    word-wrap: break-word;  
 }
 
+
 .etape:hover {
-    font-size: 22px;
+    font-size: 20px;
     cursor: pointer;
 }
 
@@ -137,4 +137,20 @@ p {
 
 .invisible {
     opacity: 40%;
+}
+
+/*Mobile settings*/
+
+@media(max-width: 620px) {
+    .etape {
+        width: 100%;
+    }
+
+    .refresh {
+        margin-bottom: 10px;
+    }
+
+    .navbar-act {
+        font-size: 18px;
+    }
 }
