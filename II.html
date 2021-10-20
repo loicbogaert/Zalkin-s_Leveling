@@ -29,34 +29,64 @@
         <button class="refresh" id="refresh">Refresh</button> 
         <!--Leveling List-->
         <section class="act">
+            <div class="popupInvisible popup" id="popup">
+                <div id="close-container">
+                    <div class="leftright"></div>
+                    <div class="rightleft"></div>
+                  </div>
+                <div class="banditTxt">
+                    <p>First of all, the bandits quest will give you rewards based on which bandit you chose, so you have to know which bandit you want to help, or if you want to kill all bandits.</p>
+                    <br>
+                    <p> Usually, you will choose either to <t class="underline">help Alira</t>, or to <t class="underline">kill all bandits</t>.</p>
+
+                    <p>If you are following a guide, try to find out which one the guide tells you to pick.</p>
+
+                    <p>If not, know that <t class="underline">Help Alira</t> or <t class="underline">Kill All Bandits</t> are probably the two best options.</p>
+
+                    <p>If you want to change later on, you will be able change your bandit bonus with a vendor recipe.</p>
+                    <br>
+                    <p><t class="underline">Kill All Bandits</t> : +2 skill points<t class="orange"> <i class="fas fa-long-arrow-alt-right arrow"></i> Kill the three bandits and talk to Eramir in town</t></p>
+                    <br>
+                    <p><t class="underline">Help Alira</t> : 5 mana regen / +20% to global critical strike multiplier / +15% to all Elemental resistances <t class="orange"> <i class="fas fa-long-arrow-alt-right arrow"></i> Kill Kraityn and Oak - Help Alira (talk to her at the end)</t></p></p>
+                    <br>
+                    <p><t class="underline">Help Kraityn</t> : 6% attack and cast speed / 3% chance to dodge attacks / 6% increased movement speed <t class="orange"> <i class="fas fa-long-arrow-alt-right arrow"></i> Kill Alira and Oak - Help Kraityn (talk to him at the end)</t></p>
+                    <br>
+                    <p><t class="underline">Help Oak</t> : 1% of life regenerated per second / 2%additionnal physical damage reduction / 20% increased physical damage <t class="orange"> <i class="fas fa-long-arrow-alt-right arrow"></i> Kill Kraityn and Alira - Help Oak (talk to him at the end)</t></p>
+
+                    <br> <p>Our guide is written as if you would <t class="underline">Kill All Bandits</t>, so be aware of that.</p>
+                </div>
+            </div>
             <div class="etape-list">
-               <p class="etape visible"> Go to <t class="white">&nbspOld Fields&nbsp</t> - <t class="white">&nbspThe Crossroads</t> <t class="blue">&nbsp[WP]</t></p>
-               <p class="etape visible"> Enter <t class="white">&nbspChamber of Sins</t> <t class="blue">&nbsp[WP]&nbsp</t> - <t class="white">&nbspLevel 2</t> <t class="trial">&nbsp[Trial]</t></p>
-               <p class="etape visible"> Defeat <t class="orange">&nbspFidelitas&nbsp</t> - Get <t class="green">&nbspBaleful Gem&nbsp</t> - Go to town</p>
-               <p class="etape visible"> Talk to Greust [Aura Skill Gem]</p>
-               <p class="etape visible"> WP to <t class="white">&nbspThe Crossroads&nbsp</t> - <t class="white">&nbspBroken Bridge</t></p>
-               <p class="etape visible"> Defeat <t class="orange">&nbspKraityn</t> - Get <t class="green">&nbspKraityn’s Amulet</t></p>
-               <p class="etape visible"> Go to town</p>
-               <p class="etape visible"> Go to <t class="white">&nbspThe Riverways</t> <t class="blue">&nbsp[WP]&nbsp</t> - <t class="white">&nbspWestern Forest</t> <t class="blue">&nbsp[WP]</t></p>
-               <p class="etape visible"> Defeat <t class="orange">&nbspAlira&nbsp</t> - Get <t class="green">&nbspAlira’s Amulet</t></p>
-               <p class="etape visible"> Defeat <t class="orange">&nbspGuards&nbsp</t> at bottom of map <t class="cyan">&nbsp[+1]</t></p>
-               <p class="etape visible"> Get <t class="green">&nbspThaumetic Emblem&nbsp</t> - Place it on the wall</p>
-               <p class="etape visible"> Enter <t class="white">&nbspWeaver’s Chambers&nbsp</t> - <t class="white">&nbspWeaver’s Nest</t></p>
-               <p class="etape visible"> Defeat <t class="orange">&nbspWeaver&nbsp</t> - Get <t class="green">&nbspMaligaro’s Spike</t></p>
-               <p class="etape visible"> Go to town – Talk to Silk [Lvl 18 Support Gem]</p>
-               <p class="etape visible"> WP to Act 1 – Talk to Bestel</p>
-               <p class="etape visible"> WP to <t class="white">&nbspThe Riverways&nbsp</t> - <t class="white">&nbspThe Wetlands</t> <t class="blue">&nbsp[WP]</t></p>
-               <p class="etape visible"> Defeat <t class="orange">&nbspOak&nbsp</t> - Get <t class="green">&nbspOak’s Amulet</t></p>
-               <p class="etape visible"> WP to town – Talk to Eramir <t class="cyan">&nbsp[+2]</t></p>
-               <p class="etape visible"> WP back <t class="white">&nbsp(Wetlands)&nbsp</t> – Burn The Roots to open <t class="white">&nbspVaal Ruins&nbsp</t> (Top of the map)</p>
-               <p class="etape visible"> Enter <t class="white">&nbspVaal Ruins&nbsp</t> - Break Ancient Seal</p>
-               <p class="etape visible"> Go to <t class="white">&nbspNorthern Forest&nbsp</t> - Enter <t class="white">&nbspThe Caverns</t></p>
-               <p class="etape visible"> Climb <t class="white">&nbspAncient Pyramid&nbsp</t> - Enter <t class="white">&nbspPyramid Apex</t></p>
-               <p class="etape visible"> Defeat the <t class="orange">&nbspVaal Oversoul</t></p>
+                <div class="etape visible"> Find <t class="white triggerImg">&nbspForest Encampment&nbsp</t><div class="fakeParent"><div class="boxPopup boxInvisible"><embed src="img/act2/location/forest_encampment.png"></div></div></div>
+                <div class="etape visible"> Go to <t class="white triggerImg">&nbspOld Fields&nbsp</t><div class="fakeParent"><div class="boxPopup boxInvisible"><embed src="img/act2/location/old_fields.png"></div></div> and find <t class="white triggerImg">&nbspThe Crossroads</t><div class="fakeParent"><div class="boxPopup boxInvisible"><embed src="img/act2/location/crossroads.png"></div></div> <t class="blue">&nbsp[WP]</t></div>
+                <div class="etape visible"> Enter <t class="white triggerImg">&nbspChamber of Sins</t><div class="fakeParent"><div class="boxPopup boxInvisible"><embed src="img/act2/location/chamber_of_sins.png"></div></div> <t class="blue">&nbsp[WP]&nbsp</t> find <t class="white triggerImg">&nbspLevel 2</t><div class="fakeParent"><div class="boxPopup boxInvisible"><embed src="img/act2/location/chamber_of_sins2.png"></div></div> <t class="trial">&nbsp[Trial]</t></div>
+                <div class="etape visible"> Defeat <t class="orange triggerImg">&nbspFidelitas&nbsp</t><div class="fakeParent"><div class="boxPopup boxInvisible"><embed src="img/act2/boss/fidelitas.png"></div></div> - Get <t class="green triggerImg">&nbspBaleful Gem&nbsp</t><div class="fakeParent"><div class="boxPopup boxInvisible boxVisible3"><embed src="img/act2/quest/Baleful_Gem_inventory_icon.png"></div></div> - Go to town</div>
+                <div class="etape visible"> Talk to Greust [Aura Skill Gem]</div> 
+                <div class="etape visible"> WP to <t class="white">&nbspThe Crossroads&nbsp</t> and find <t class="white triggerImg">&nbspBroken Bridge</t><div class="fakeParent"><div class="boxPopup boxInvisible"><embed src="img/act2/location/broken_bridge.png"></div></div></div>
+                <div class="red popupTrigger" id="popupTrigger"><i class="fas fa-exclamation-triangle"></i>&nbspIF YOU HAVE NO CLUE ABOUT BANDITS CLICK HERE&nbsp<i class="fas fa-exclamation-triangle"></i></div>
+                <div class="etape visible"> Defeat <t class="orange triggerImg">&nbspKraityn</t><div class="fakeParent"><div class="boxPopup boxInvisible"><embed src="img/act2/boss/Kraityn.jpg"></div></div> - Get <t class="green triggerImg">&nbspKraityn’s Amulet</t><div class="fakeParent"><div class="boxPopup boxInvisible boxVisible3"><embed src="img/act2/quest/Kraityn_Amulet_inventory_icon.png"></div></div></div>
+                <div class="etape visible"> Go to town</div>
+                <div class="etape visible"> Go to <t class="white triggerImg">&nbspThe Riverways</t><div class="fakeParent"><div class="boxPopup boxInvisible"><embed src="img/act2/location/riverways.png"></div></div> <t class="blue">&nbsp[WP]&nbsp</t> - <t class="white triggerImg">&nbspWestern Forest</t><div class="fakeParent"><div class="boxPopup boxInvisible"><embed src="img/act2/location/western_forest.png"></div></div> <t class="blue">&nbsp[WP]</t></div>
+                <div class="etape visible"> Defeat <t class="orange triggerImg">&nbspAlira&nbsp</t><div class="fakeParent"><div class="boxPopup boxInvisible"><embed src="img/act2/boss/alira.jpg"></div></div> - Get <t class="green triggerImg">&nbspAlira’s Amulet</t><div class="fakeParent"><div class="boxPopup boxInvisible boxVisible3"><embed src="img/act2/quest/Alira_Amulet_inventory_icon.png"></div></div></div>
+                <div class="etape visible"> Defeat <t class="orange triggerImg">&nbspGuards&nbsp</t><div class="fakeParent"><div class="boxPopup boxInvisible"><embed src=""></div></div> at bottom of map <t class="cyan">&nbsp[+1]</t></div>
+                <div class="etape visible"> Get <t class="green triggerImg">&nbspThaumetic Emblem&nbsp</t><div class="fakeParent"><div class="boxPopup boxInvisible boxVisible3"><embed src="img/act2/quest/Thaumetic_Emblem_inventory_icon.png"></div></div> - Place it on the wall</div>
+                <div class="etape visible"> Enter <t class="white triggerImg">&nbspWeaver’s Chambers&nbsp</t><div class="fakeParent"><div class="boxPopup boxInvisible"><embed src="img/act2/location/weavers_chamber.png"></div></div> and find <t class="white triggerImg">&nbspWeaver’s Nest</t><div class="fakeParent"><div class="boxPopup boxInvisible"><embed src="img/act2/location/weavers_nest.png"></div></div></div>
+                <div class="etape visible"> Defeat <t class="orange triggerImg">&nbspWeaver&nbsp</t><div class="fakeParent"><div class="boxPopup boxInvisible"><embed src="img/act2/boss/weaver.png"></div></div> - Get <t class="green triggerImg">&nbspMaligaro’s Spike</t><div class="fakeParent"><div class="boxPopup boxInvisible"><embed src="img/act2/quest/Maligaro_Spike_inventory_icon.png"></div></div></div>
+                <div class="etape visible"> Go to town – Talk to Silk [Lvl 18 Support Gem]</div>
+                <div class="etape visible"> WP to Act 1 – Talk to Bestel</div>
+                <div class="etape visible"> WP to <t class="white triggerImg">&nbspThe Riverways&nbsp</t>and find <t class="white triggerImg">&nbspThe Wetlands</t><div class="fakeParent"><div class="boxPopup boxInvisible"><embed src="img/act2/location/wetlands.png"></div></div> <t class="blue">&nbsp[WP]</t></div>
+                <div class="etape visible"> Defeat <t class="orange triggerImg">&nbspOak&nbsp</t><div class="fakeParent"><div class="boxPopup boxInvisible"><embed src="img/act2/boss/oak.jpg"></div></div> - Get <t class="green triggerImg">&nbspOak’s Amulet</t><div class="fakeParent"><div class="boxPopup boxInvisible boxVisible3"><embed src="img/act2/quest/Oak_Amulet_inventory_icon.png"></div></div></div>
+                <div class="etape visible"> WP to town – Talk to Eramir <t class="cyan">&nbsp[+2]</t></div>
+                <div class="etape visible"> WP back <t class="white">&nbsp(Wetlands)&nbsp</t> – Burn The Roots to open <t class="white triggerImg">&nbspVaal Ruins&nbsp</t><div class="fakeParent"><div class="boxPopup boxInvisible"><embed src="img/act2/location/vaal_ruins.png"></div></div> (Top of the map)</div>
+                <div class="etape visible"> Enter <t class="white triggerImg">&nbspVaal Ruins&nbsp</t><div class="fakeParent"><div class="boxPopup boxInvisible"><embed src="img/act2/location/vaal_ruins.png"></div></div> - Break Ancient Seal</div>
+                <div class="etape visible"> Go to <t class="white triggerImg">&nbspNorthern Forest&nbsp</t><div class="fakeParent"><div class="boxPopup boxInvisible"><embed src="img/act2/location/northern_forest.png"></div></div> - Enter <t class="white triggerImg">&nbspThe Caverns</t><div class="fakeParent"><div class="boxPopup boxInvisible"><embed src="img/act2/location/caverns.png"></div></div></div>
+                <div class="etape visible"> Climb <t class="white triggerImg">&nbspAncient Pyramid&nbsp</t><div class="fakeParent"><div class="boxPopup boxInvisible"><embed src="img/act2/location/ancient pyramid.png"></div></div> - Enter <t class="white triggerImg">&nbspPyramid Apex</t><div class="fakeParent"><div class="boxPopup boxInvisible"><embed src="img/act2/location/pyramid_apex.png"></div></div></div>
+                <div class="etape visible"> Defeat the <t class="orange triggerImg">&nbspVaal Oversoul</t><div class="fakeParent"><div class="boxPopup boxInvisible"><embed src="img/act2/boss/Vaal_Oversoul.png"></div></div></div>
             </div>
         </section>
     </main>
 
+    <script src="https://kit.fontawesome.com/e06337b559.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>

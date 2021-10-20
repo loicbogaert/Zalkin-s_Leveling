@@ -6,7 +6,6 @@ etape = document.getElementsByClassName("etape");
 var invisible = [];
 var arrayToParse = localStorage.getItem("list", invisible);
 invisible = JSON.parse(arrayToParse);
-console.log(invisible)
 
 // at the start (empty array)
 if (invisible === null) {
@@ -46,8 +45,45 @@ for (i = 0; etape.length > i; i++) {
         }
     }
 
-// !!!!!!!!!!! refresh button (faire en sorte de vider le local storage quand ça marchera !!!!!!!!!!!!!)
+// TRIGGERING THE IMAGES POPUP
+var imgPopup = new Array;
+var imgTrigger = new Array;
+imgPopup = document.getElementsByClassName("boxPopup");
+imgTrigger = document.getElementsByClassName("triggerImg");
+
+for (i = 0; imgPopup.length > i; i++) {
+    imgTrigger[i].addEventListener("mouseover", function(){
+        console.log(this.nextSibling)
+        this.nextSibling.childNodes[0].classList.add("boxVisible");
+        this.nextSibling.childNodes[0].classList.remove("boxInvisible");
+    })
+
+    imgTrigger[i].addEventListener("mouseout", function(){
+        this.nextSibling.childNodes[0].classList.remove("boxVisible");
+        this.nextSibling.childNodes[0].classList.add("boxInvisible");
+    })
+}
+
+
+// refresh button
 document.getElementById("refresh").onclick = function() {
     localStorage.clear();
     location.reload();
 }
+
+    //popup for bandits text
+
+    var popupTrigger = document.getElementById("popupTrigger");
+    var closeContainer = document.getElementById("close-container");
+    console.log(popupTrigger)
+
+    popupTrigger.onclick = function() {
+        var textToDisplay = document.getElementById("popup");
+        textToDisplay.classList.replace("popupInvisible", "popupVisible")
+    };
+
+    closeContainer.onclick = function() {
+        var textToDisplay = document.getElementById("popup");
+        textToDisplay.classList.replace("popupVisible", "popupInvisible")
+    }
+
